@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="heading">Is Your Birthday Lucky?</h1>
     <div class="container">
-        <input type="date" id="birth-date">
-        <input type="number" id="lucky-number" placeholder="Lucky Number">
-        <button id="btn">Check Out!</button>
+        <h1 class="heading">Is Your Birthday Lucky?</h1>
+        <label for="input--dob" class="input-label dob">Date Of Birth:</label>
+        <input type="date" class="input input--dob">
+        <label for="input--lucky-number" class="input-label lucky-number">Lucky Number:</label>
+        <input type="number" min="0" class="input input--lucky-number">
+        <button class="btn-check">Check</button>
+        <p class="result"></p>
     </div>
-    <div class="output">
-        <textarea id="show-result"></textarea>
-    </div>
-    <script src="app.js"></script>
+    <hr>
+    <script src="/app.js"></script>
     
 </body>
 </html>
